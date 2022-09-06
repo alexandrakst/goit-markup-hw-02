@@ -1,3 +1,43 @@
+:root {
+  --primary-text-color: #212121;
+  --secondary-text-color: #2f303a;
+  --third-text-color: #757575;
+  --accent-color: #2196f3;
+  /* --primary-font: 'Roboto', sans-serif; */
+  /* FFFFFF */
+}
+
+.list {
+  list-style: none;
+  text-decoration: none;
+}
+
 body {
-  color: red;
+  font-family: 'Roboto', sans-serif;
+  color: var(--primary-text-color);
+}
+
+.logo-text {
+  color: #2196f3;
+}
+
+.logo {
+  font-family: 'Raleway', sans-serif;
+  color: #2196f3;
+}
+
+.header a:hover,
+.header a:focus {
+  color: #2196f3;
+  text-decoration: none;
+}
+
+.header-nav a {
+  text-decoration: none;
+  color: var(--primary-text-color);
+}
+
+.header-info a {
+  text-decoration: none;
+  color: var(--third-text-color);
 }
