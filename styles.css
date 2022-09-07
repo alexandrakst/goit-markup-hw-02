@@ -72,8 +72,6 @@ body {
   cursor: pointer;
   width: 216px;
   height: 50px;
-  left: 692px;
-  top: 430px;
   border: none;
   border-radius: 5px;
 }
@@ -83,7 +81,8 @@ body {
   background-color: #1268af;
 }
 
-.about-title {
+.about-title,
+.portfolio-title {
   visibility: hidden;
 }
 
@@ -157,5 +156,40 @@ body {
 /* portfolio styles */
 
 .portfolio-button {
-  font-size: 50px;
+  margin: 5px;
+  width: 112px;
+  height: 38px;
+  background-color: #f5f4fa;
+  border-radius: 5px;
+  border: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+}
+
+.portfolio-button:hover,
+.portfolio-button:focus {
+  background-color: var(--accent-color);
+  color: var(--fourth-text-color);
+  cursor: pointer;
+}
+
+.portfolio-images a {
+  text-decoration: none;
+}
+
+.portfolio-header {
+  color: var(--primary-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.portfolio-paragraph {
+  color: var(--third-text-color);
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
 }
