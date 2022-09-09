@@ -39,12 +39,14 @@ body {
   line-height: 1.2;
 }
 
-/* add active link */
-
 .header a:hover,
 .header a:focus {
   color: var(--accent-color);
   text-decoration: none;
+}
+
+.link.current {
+  color: var(--accent-color);
 }
 
 .header-list,
@@ -93,10 +95,19 @@ body {
 }
 
 /* add visualy-hidden?? */
-/* .about-title,
-.portfolio-title {
-  visibility: hidden;
-} */
+.about-title-hidden,
+.portfolio-title-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
 
 .about h3 {
   text-transform: uppercase;
