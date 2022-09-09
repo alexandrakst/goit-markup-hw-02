@@ -4,6 +4,7 @@
   --third-text-color: #757575;
   --fourth-text-color: #ffffff;
   --accent-color: #2196f3;
+  --primary-background-color: #f5f4fa;
   --primary-font: 'Roboto', sans-serif;
   --primary-font-size: 14px;
 }
@@ -17,6 +18,7 @@ body {
   font-family: var(--primary-font);
   color: var(--primary-text-color);
   font-size: var(--primary-font-size);
+  background-color: var(--fourth-text-color);
 }
 
 .logo-web {
@@ -24,70 +26,77 @@ body {
 }
 
 .logo-studio {
-  color: #000000;
-}
-
-.logo-footer {
   color: var(--fourth-text-color);
 }
 
-.logo {
+.logo,
+.footer-logo {
   font-family: 'Raleway', sans-serif;
+  color: #000000;
   text-decoration: none;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
 }
 
+/* add active link */
+
 .header a:hover,
 .header a:focus {
-  color: #2196f3;
+  color: var(--accent-color);
   text-decoration: none;
+}
+
+.header-list,
+.header-info {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 
 .header-list a {
   text-decoration: none;
   color: var(--primary-text-color);
-  font-weight: 500;
-  line-height: 1.14;
 }
 
 .header-info a {
   text-decoration: none;
   color: var(--third-text-color);
-  font-weight: 500;
-  line-height: 1.14;
+}
+
+.hero {
+  background-color: var(--secondary-text-color);
 }
 
 .hero-title {
   text-transform: uppercase;
-  background-color: #2f303a;
   color: var(--fourth-text-color);
   font-weight: 900;
   font-size: 44px;
-  line-height: 1.4;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
   text-align: center;
 }
 
 .order-button {
-  background: var(--accent-color);
+  font-family: inherit;
+  background-color: var(--accent-color);
   color: var(--fourth-text-color);
+  letter-spacing: 0.06em;
   cursor: pointer;
-  width: 216px;
-  height: 50px;
-  border: none;
   border-radius: 5px;
 }
 
 .order-button:hover,
 .order-button:focus {
-  background-color: #1268af;
+  background-color: #188ce8;
 }
 
-.about-title,
+/* add visualy-hidden?? */
+/* .about-title,
 .portfolio-title {
   visibility: hidden;
-}
+} */
 
 .about h3 {
   text-transform: uppercase;
@@ -98,7 +107,7 @@ body {
 
 .about p {
   color: var(--third-text-color);
-  line-height: 1.7;
+  line-height: 1.71;
   letter-spacing: 0.03em;
 }
 
@@ -113,7 +122,13 @@ body {
 
 .team {
   font-size: 16px;
-  line-height: 1.2;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  background-color: var(--primary-background-color);
+}
+
+.team-description {
+  background-color: var(--fourth-text-color);
 }
 
 .team-photos h3 {
@@ -146,24 +161,21 @@ body {
   text-decoration: none;
 }
 
-.adress a:hover,
-.adress a:focus {
-  color: #2196f3;
+.adress-info:hover,
+.adress-info:focus {
+  color: var(--accent-color);
   text-decoration: none;
 }
 
 /* portfolio page styles */
 
 .portfolio-button {
-  margin: 5px;
-  width: 112px;
-  height: 38px;
-  background-color: #f5f4fa;
+  background-color: var(--primary-background-color);
   border-radius: 5px;
-  border: none;
+  border: transparent;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.6;
+  line-height: 1.62;
   letter-spacing: 0.03em;
 }
 
@@ -189,6 +201,6 @@ body {
 .portfolio-paragraph {
   color: var(--third-text-color);
   font-size: 16px;
-  line-height: 1.9;
+  line-height: 1.88;
   letter-spacing: 0.03em;
 }
