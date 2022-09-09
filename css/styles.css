@@ -94,7 +94,6 @@ body {
   background-color: #188ce8;
 }
 
-/* add visualy-hidden?? */
 .about-title-hidden,
 .portfolio-title-hidden {
   position: absolute;
@@ -152,7 +151,7 @@ body {
 }
 
 .footer {
-  background-color: #2f303a;
+  background-color: var(--secondary-text-color);
 }
 
 .adress-item a {
