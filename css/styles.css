@@ -3,6 +3,8 @@
   --secondary-text-color: #2f303a;
   --third-text-color: #757575;
   --fourth-text-color: #ffffff;
+  --logo-color: #000000;
+  --adress-color: rgba(255, 255, 255, 0.6);
   --accent-color: #2196f3;
   --primary-background-color: #f5f4fa;
   --primary-font: 'Roboto', sans-serif;
@@ -32,15 +34,22 @@ body {
 .logo,
 .footer-logo {
   font-family: 'Raleway', sans-serif;
-  color: #000000;
+  color: var(--logo-color);
   text-decoration: none;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
 }
 
-.header a:hover,
-.header a:focus {
+.logo:focus,
+.footer-logo:focus {
+  outline: none;
+}
+
+.link:hover,
+.link:focus,
+.info-link:hover,
+.info-link:focus {
   color: var(--accent-color);
   text-decoration: none;
 }
@@ -49,19 +58,21 @@ body {
   color: var(--accent-color);
 }
 
-.header-list,
-.header-info {
+.header-item,
+.header-mail,
+.header-phone {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
 
-.header-list a {
+.link,
+.current {
   text-decoration: none;
   color: var(--primary-text-color);
 }
 
-.header-info a {
+.info-link {
   text-decoration: none;
   color: var(--third-text-color);
 }
@@ -82,9 +93,13 @@ body {
 
 .order-button {
   font-family: inherit;
+  font-size: 16px;
   background-color: var(--accent-color);
   color: var(--fourth-text-color);
+  width: 216px;
+  height: 50px;
   letter-spacing: 0.06em;
+  line-height: 30px;
   cursor: pointer;
   border-radius: 5px;
 }
@@ -108,14 +123,14 @@ body {
   margin: -1px;
 }
 
-.about h3 {
-  text-transform: uppercase;
+.about-header {
   font-weight: 700;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
-.about p {
+.about-p {
   color: var(--third-text-color);
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -131,21 +146,25 @@ body {
 }
 
 .team {
+  background-color: var(--primary-background-color);
+}
+
+.team-member,
+.member-title {
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
-  background-color: var(--primary-background-color);
 }
 
 .team-description {
   background-color: var(--fourth-text-color);
 }
 
-.team-photos h3 {
+.team-member {
   font-weight: 500;
 }
 
-.team-photos p {
+.member-title {
   color: var(--third-text-color);
   font-weight: 400;
 }
@@ -154,7 +173,7 @@ body {
   background-color: var(--secondary-text-color);
 }
 
-.adress-item a {
+.adress-info {
   color: var(--fourth-text-color);
   font-style: normal;
   line-height: 1.7;
@@ -162,15 +181,16 @@ body {
   text-decoration: none;
 }
 
-.adress-mail a,
-.adress-phone a {
+.adress-link {
   font-style: normal;
-  line-height: 1.7;
+  line-height: 1.71;
   letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--adress-color);
   text-decoration: none;
 }
 
+.adress-link:hover,
+.adress-link:focus,
 .adress-info:hover,
 .adress-info:focus {
   color: var(--accent-color);
@@ -180,13 +200,35 @@ body {
 /* portfolio page styles */
 
 .portfolio-button {
+  font-family: inherit;
   background-color: var(--primary-background-color);
   border-radius: 5px;
+  height: 38px;
   border: transparent;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
+}
+
+.all {
+  width: 73px;
+}
+
+.sites {
+  width: 125px;
+}
+
+.add {
+  width: 112px;
+}
+
+.design {
+  width: 103px;
+}
+
+.marketing {
+  width: 130px;
 }
 
 .portfolio-button:hover,
@@ -196,7 +238,7 @@ body {
   cursor: pointer;
 }
 
-.portfolio-images a {
+.portfolio-image {
   text-decoration: none;
 }
 
