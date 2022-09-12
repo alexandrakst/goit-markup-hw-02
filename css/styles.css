@@ -93,13 +93,13 @@ body {
 }
 
 .order-button {
-  font-size: 16px;
   font-family: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.87;
   letter-spacing: 0.06em;
-  line-height: 30px;
-  width: 216px;
-  height: 50px;
   border-radius: 5px;
+  border-color: transparent;
   color: var(--fourth-text-color);
   background-color: var(--accent-color);
   cursor: pointer;
@@ -208,28 +208,8 @@ body {
   letter-spacing: 0.03em;
   height: 38px;
   border-radius: 5px;
-  border: transparent;
+  border-color: transparent;
   background-color: var(--primary-background-color);
-}
-
-.all {
-  width: 73px;
-}
-
-.sites {
-  width: 125px;
-}
-
-.add {
-  width: 112px;
-}
-
-.design {
-  width: 103px;
-}
-
-.marketing {
-  width: 130px;
 }
 
 .portfolio-button:hover,
