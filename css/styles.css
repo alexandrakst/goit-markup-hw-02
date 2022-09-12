@@ -6,6 +6,7 @@
   --logo-color: #000000;
   --adress-color: rgba(255, 255, 255, 0.6);
   --accent-color: #2196f3;
+  --button-hover: #188ce8;
   --primary-background-color: #f5f4fa;
   --primary-font: 'Roboto', sans-serif;
   --primary-font-size: 14px;
@@ -82,31 +83,31 @@ body {
 }
 
 .hero-title {
-  text-transform: uppercase;
-  color: var(--fourth-text-color);
-  font-weight: 900;
   font-size: 44px;
+  font-weight: 900;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-align: center;
+  text-transform: uppercase;
+  color: var(--fourth-text-color);
 }
 
 .order-button {
-  font-family: inherit;
   font-size: 16px;
-  background-color: var(--accent-color);
-  color: var(--fourth-text-color);
-  width: 216px;
-  height: 50px;
+  font-family: inherit;
   letter-spacing: 0.06em;
   line-height: 30px;
-  cursor: pointer;
+  width: 216px;
+  height: 50px;
   border-radius: 5px;
+  color: var(--fourth-text-color);
+  background-color: var(--accent-color);
+  cursor: pointer;
 }
 
 .order-button:hover,
 .order-button:focus {
-  background-color: #188ce8;
+  background-color: var(--button-hover);
 }
 
 .about-title-hidden,
@@ -131,18 +132,18 @@ body {
 }
 
 .about-p {
-  color: var(--third-text-color);
   line-height: 1.71;
   letter-spacing: 0.03em;
+  color: var(--third-text-color);
 }
 
 .our-work-title,
 .team-title {
-  font-weight: 700;
   font-size: 36px;
+  font-weight: 700;
   line-height: 1.16;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
 }
 
 .team {
@@ -165,28 +166,28 @@ body {
 }
 
 .member-title {
-  color: var(--third-text-color);
   font-weight: 400;
+  color: var(--third-text-color);
 }
 
 .footer {
   background-color: var(--secondary-text-color);
 }
 
-.adress-info {
-  color: var(--fourth-text-color);
-  font-style: normal;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
-  text-decoration: none;
-}
-
+.adress-info,
 .adress-link {
   font-style: normal;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--adress-color);
   text-decoration: none;
+}
+
+.adress-info {
+  color: var(--fourth-text-color);
+}
+
+.adress-link {
+  color: var(--adress-color);
 }
 
 .adress-link:hover,
@@ -201,14 +202,14 @@ body {
 
 .portfolio-button {
   font-family: inherit;
-  background-color: var(--primary-background-color);
-  border-radius: 5px;
-  height: 38px;
-  border: transparent;
-  font-weight: 500;
   font-size: 16px;
+  font-weight: 500;
   line-height: 1.62;
   letter-spacing: 0.03em;
+  height: 38px;
+  border-radius: 5px;
+  border: transparent;
+  background-color: var(--primary-background-color);
 }
 
 .all {
@@ -243,16 +244,16 @@ body {
 }
 
 .portfolio-header {
-  color: var(--primary-text-color);
-  font-weight: 700;
   font-size: 18px;
   line-height: 2;
+  font-weight: 700;
   letter-spacing: 0.06em;
+  color: var(--primary-text-color);
 }
 
 .portfolio-paragraph {
-  color: var(--third-text-color);
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
+  color: var(--third-text-color);
 }
